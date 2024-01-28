@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#block2 {
+}
+.clBlock2 {
+  font-size: 60px;
+}
+div {
+  border: 1px solid black;
+  padding: 10px;
+  /* margin: 25%; */
+  /* background: url("https://cdn-p.cian.site/images/kvartira-moskva-2y-setunskiy-proezd-2086057438-4.jpg"); */
+  /* background-repeat: round; */
+}
