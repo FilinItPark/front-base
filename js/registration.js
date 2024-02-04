@@ -33,7 +33,6 @@ class Registration {
 
     return users && users.filter((user) => user.login === login).length > 0;
   }
-
 }
 
 const registration = new Registration();
@@ -46,7 +45,10 @@ document.querySelector(".signup").addEventListener("click", (event) => {
   const fio = document.querySelector("#fio").value;
   const age = document.querySelector("#age").value;
 
-  registration.saveToDB(login, password, fio, age);
+  try {
+    registration.saveToDB(login, password, fio, age);
+    document.location.href = "/tasks.html";
+  } catch (error) {
+    alert(error.message);
+  }
 });
-
-

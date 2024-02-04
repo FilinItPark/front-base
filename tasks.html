@@ -38,6 +38,11 @@
     <div class="container">
 
       <h1>Задачи</h1>
+
+      <form >
+        <input type="text" placeholder='Описание задачи' id='newTask'>
+        <button class="btn btn-outline-primary" id='btn-create-task'>Создать задачу</button>
+      </form>
       
       <div class='own-row'>
         <p class='m-1'><a class='nav-link' href="tasks.html">Выполненные</a></p>
@@ -46,12 +51,12 @@
 
       <div>
         <ul class="completed-tasks">
-            <li>задача 1</li>
-            <li>задача 2</li>
-            <li>задача 3</li>
+            
         </ul>
       </div>
     </div>
+
+    <script src='js/task.js'></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
