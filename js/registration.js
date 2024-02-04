@@ -23,6 +23,7 @@ class Registration {
     const newUsersInJson = JSON.stringify(users);
     localStorage.setItem("users", newUsersInJson);
   }
+
   checkExists(login) {
     const usersInJson = localStorage.getItem("users");
     let users;
@@ -32,6 +33,7 @@ class Registration {
 
     return users && users.filter((user) => user.login === login).length > 0;
   }
+
 }
 
 const registration = new Registration();
@@ -46,3 +48,5 @@ document.querySelector(".signup").addEventListener("click", (event) => {
 
   registration.saveToDB(login, password, fio, age);
 });
+
+
