@@ -136,3 +136,7 @@ document.querySelector("button[type=submit]").addEventListener("click", (e) => {
   console.log(passwordInput.value);
   console.log(ageInput.value);
 });
+
+document.querySelector(".changeStatusButton").addEventListener("click", () => {
+  document.querySelector(".to").classList.toggle("hidden");
+});
